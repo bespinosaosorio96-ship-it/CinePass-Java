@@ -1,0 +1,24 @@
+# Archivos temporales y de script ignorados según requerimiento
+*.html
+*.py
+*.pyc
+__pycache__/
+
+# Documentos borradores (el informe oficial es informe_entregable2.pdf)
+informe_entregable2.md
+
+# Archivos comprimidos temporales
+*.zip
+
+# Entorno de desarrollo e IDEs
+.vscode/
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+
+# Sistema operativo
+Thumbs.db
+Desktop.ini
+.DS_Store
