@@ -2,7 +2,7 @@
 
 [![Java Version](https://img.shields.io/badge/Java-21%20LTS-orange.svg?style=flat-square&logo=openjdk)](https://openjdk.org/)
 [![Paradigm](https://img.shields.io/badge/Paradigm-Object--Oriented%20Programming-blue.svg?style=flat-square)](https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos)
-[![Deliverable](https://img.shields.io/badge/Entregable-Segundo%20Entregable%20(POO)-green.svg?style=flat-square)](informe_entregable2.pdf)
+[![Deliverable](https://img.shields.io/badge/Entregable-Entrega%20Final%20(POO)-green.svg?style=flat-square)](entrega_final.pdf)
 
 > Sistema de gestión de taquilla, reservas y asignación matricial de asientos para salas de cine desarrollado en **Java SE**, con arquitectura desacoplada por capas e implementación rigurosa de los cuatro pilares de la **Programación Orientada a Objetos (POO)**.
 
@@ -69,7 +69,8 @@ src/
 .
 ├── .gitignore
 ├── README.md                    # Documentación del repositorio
-├── informe_entregable2.pdf      # Informe técnico formal universitario
+├── entrega_final.md             # Documento fuente en Markdown
+├── entrega_final.pdf            # Informe técnico formal universitario (Entrega Final)
 ├── bin/                         # Binarios compilados (.class)
 ├── docs/
 │   └── screenshots/             # Evidencias visuales de consola
@@ -151,6 +152,17 @@ Confirmación de almacenamiento transaccional en el controlador y comprobación 
 
 ## 📑 Documentación Oficial
 
-El informe académico formal completo con los diagramas de clases, descripción arquitectónica exhaustiva, justificación de patrones de diseño y conclusiones se encuentra en el archivo:
+El informe académico formal completo con los diagramas de clases, descripción arquitectónica exhaustiva, justificación de patrones de diseño, evidencias de consola y GUI Swing y conclusiones se encuentra en el archivo:
 
-👉 **[informe_entregable2.pdf](informe_entregable2.pdf)**
+👉 **[entrega_final.pdf](entrega_final.pdf)** *(Informe Técnico — Entrega Final)*
+
+---
+
+## 👥 Datos Académicos
+
+* **Asignatura:** Programación Orientada a Objetos
+* **Docente:** Profesor Genner Carrillo
+* **Integrantes:**
+  * Brayan Espinosa Osorio
+  * Samuel Leonardo Moreno Fuentes
+* **Fecha:** 17 de noviembre de 2026

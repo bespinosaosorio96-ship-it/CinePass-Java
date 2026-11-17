@@ -1,11 +1,11 @@
-# Archivos temporales y de script ignorados según requerimiento
+# Archivos temporales y de script ignorados
 *.html
 *.py
 *.pyc
 __pycache__/
 
-# Documentos borradores (el informe oficial es informe_entregable2.pdf)
-informe_entregable2.md
+# Documentos anteriores
+informe_entregable2.*
 
 # Archivos comprimidos temporales
 *.zip
