@@ -44,9 +44,10 @@ src/
 │   ├── TipoSala.java            # Enum con multiplicadores tarifarios
 │   └── Venta.java               # Agregación comercial: boletos, liquidación y comprobante
 ├── controller/      # Capa de orquestación de servicios y estado
-│   └── CineController.java      # Controlador de negocio (catálogo, reservas y ventas)
-└── main/            # Capa de presentación por consola
-    └── Main.java                # Interfaz CLI interactiva y orquestación
+│   └── CineController.java      # Controlador de negocio (catálogo, reservas, ventas y balance)
+└── main/            # Capa de presentación y ejecución
+    ├── Main.java                # Interfaz CLI interactiva por consola
+    └── VentanaCine.java         # Interfaz gráfica interactiva de escritorio (Swing GUI)
 ```
 
 ---
@@ -104,7 +105,14 @@ javac -d bin -encoding UTF-8 (Get-ChildItem -Recurse src/*.java | ForEach-Object
 javac -d bin -encoding UTF-8 $(find src -name "*.java")
 ```
 
-### 3. Ejecutar la Aplicación Interactiva
+### 3. Ejecutar la Aplicación
+
+#### Opción A: Interfaz Gráfica de Escritorio (Ventana Swing)
+```bash
+java -cp bin main.VentanaCine
+```
+
+#### Opción B: Interfaz Interactiva por Consola (CLI)
 ```bash
 java -cp bin main.Main
 ```
