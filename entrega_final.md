@@ -195,7 +195,10 @@ La interfaz gráfica de usuario está construida utilizando el conjunto de compo
 - **`GridLayout`:** Implementado en dos niveles estratégicos:
   - En el formulario de cliente y reserva (`GridLayout(6, 2, 8, 8)`), organizando equitativamente etiquetas descriptivas y campos de entrada.
   - En la matriz de asientos de la sala (`GridLayout(filas, columnas, 6, 6)`), adaptando dinámicamente la cuadrícula de botones según la capacidad y dimensiones de la sala en cartelera (por ejemplo, 4x6 para IMAX o 5x5 para 3D).
-- **`JToggleButton`:** Cada butaca del mapa interactivo se representa mediante un botón conmutador bi-estado con tres esquemas cromáticos semánticos:
+- **`JButton` de Acción y Control:**
+  - **Confirmar Venta:** Botón de acción comercial con fondo Azul (`#3C8CDC`), texto en negrita color negro nítido (`Color.BLACK`) y propiedades de renderizado `setOpaque(true)` y `setContentAreaFilled(false)` para garantizar máxima legibilidad y contraste cromático.
+  - **Ver Totales Taquilla:** Botón de consulta financiera con fondo Verde (`#4CAF50`), texto en negrita color negro nítido (`Color.BLACK`) y control estricto de opacidad.
+- **`JToggleButton`:** Cada butaca del mapa interactivo se representa mediante un botón conmutador bi-estado configurado con `setOpaque(true)`, tipografía en negrita y tres esquemas cromáticos semánticos:
   - **Verde Claro (`#90EE90`):** Butaca disponible para selección.
   - **Dorado / Amarillo (`#FFD700`):** Butaca seleccionada por el usuario en la sesión actual.
   - **Rojo Suave (`#DC5050`) con marca `(X)`:** Butaca ocupada previamente, deshabilitada para interacción (`setEnabled(false)`).
@@ -221,7 +224,7 @@ La interacción entre la capa de presentación y la capa lógica de negocio oper
 ### Evidencias Gráficas de la Interfaz (Swing GUI)
 
 #### Evidencia 5: Interfaz Principal y Cartelera con Mapa de Butacas Disponibles
-Se aprecia la ventana inicial del sistema con la cartelera cargada, el formulario de cliente habilitado y la matriz completa de butacas de la Sala 1 (IMAX) en color verde (`DISPONIBLE`).
+Se aprecia la ventana inicial del sistema con la cartelera cargada, el formulario de cliente habilitado, los botones de acción con texto en color negro nítido sobre sus fondos azul y verde representativos, y la matriz completa de butacas de la Sala 1 (IMAX) en color verde (`DISPONIBLE`).
 
 ![Evidencia 5 - Ventana Principal Cartelera y Mapa de Butacas](docs/screenshots/05_gui_inicio.png)
 
@@ -235,7 +238,7 @@ Se ejecuta una compra exitosa para un **Cliente Frecuente** (con 15% de descuent
 ---
 
 #### Evidencia 7: Diálogo Emergente de Totales de Taquilla y Liquidación Consolidada
-Al accionar el botón de negocio "Ver Totales Taquilla", la aplicación despliega una ventana emergente modal (`JOptionPane`) donde se consolida el balance financiero de la sesión: total de boletos comercializados, valor absoluto de los descuentos otorgados y monto neto total recaudado.
+Al accionar el botón de negocio "Ver Totales Taquilla", la aplicación despliega una ventana emergente modal (`JOptionPane`) donde se consolida el balance financiero de la sesión: total de boletos comercializados, valor absoluto de los descuentos otorgados y monto neto total recaudado, sobre el fondo atenuado de la interfaz principal.
 
 ![Evidencia 7 - Ventana Emergente JOptionPane Resumen Consolidado de Taquilla](docs/screenshots/07_gui_totales.png)
 

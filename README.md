@@ -73,11 +73,14 @@ src/
 ├── entrega_final.pdf            # Informe técnico formal universitario (Entrega Final)
 ├── bin/                         # Binarios compilados (.class)
 ├── docs/
-│   └── screenshots/             # Evidencias visuales de consola
+│   └── screenshots/             # Evidencias visuales (Consola CLI y GUI Swing)
 │       ├── 01_cartelera_funciones.png
 │       ├── 02_mapa_asientos.png
 │       ├── 03_compra_facturacion.png
-│       └── 04_historial_y_actualizacion.png
+│       ├── 04_historial_y_actualizacion.png
+│       ├── 05_gui_inicio.png
+│       ├── 06_gui_venta.png
+│       └── 07_gui_totales.png
 └── src/                         # Código fuente en Java
     ├── controller/
     ├── main/
@@ -143,10 +146,31 @@ Proceso guiado de selección de asientos contiguos, validación de disponibilida
 
 ---
 
-### 4. Historial Consolidado y Actualización de Matriz
+### 4. Historial Consolidado y Actualización de Matriz (Consola)
 Confirmación de almacenamiento transaccional en el controlador y comprobación de que los asientos comprados pasan de inmediato al estado ocupado `[X]`.
 
 ![Historial y Matriz](docs/screenshots/04_historial_y_actualizacion.png)
+
+---
+
+### 5. Interfaz Gráfica (Swing GUI) — Cartelera y Mapa de Butacas
+Despliegue visual de la ventana principal con formulario de registro, botones de acción optimizados en negro nítido (`#3C8CDC` y `#4CAF50`) y la matriz matricial de butacas disponibles en verde (`#90EE90`).
+
+![Interfaz Principal](docs/screenshots/05_gui_inicio.png)
+
+---
+
+### 6. Transacción Comercial y Emisión de Factura en Ventana
+Venta interactiva a Cliente Frecuente (15% descuento). Las butacas adquiridas (`C2` y `C3`) pasan inmediatamente a estado ocupado en rojo (`#DC5050`) con marca `(X)` y el comprobante fiscal se historiza en el panel derecho.
+
+![Venta y Facturación GUI](docs/screenshots/06_gui_venta.png)
+
+---
+
+### 7. Diálogo Modal de Totales de Taquilla
+Ventana modal emergente (`JOptionPane`) que totaliza boletos comercializados, valor absoluto de descuentos concedidos y monto neto total recaudado.
+
+![Totales Taquilla](docs/screenshots/07_gui_totales.png)
 
 ---
 
