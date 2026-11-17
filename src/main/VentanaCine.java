@@ -106,6 +106,8 @@ public class VentanaCine extends JFrame {
         btnConfirmarVenta.setBackground(new Color(60, 140, 220));
         btnConfirmarVenta.setForeground(Color.BLACK);
         btnConfirmarVenta.setFocusPainted(false);
+        btnConfirmarVenta.setContentAreaFilled(false);
+        btnConfirmarVenta.setOpaque(true);
         btnConfirmarVenta.addActionListener(e -> confirmarVenta());
         panelNorte.add(btnConfirmarVenta);
 
@@ -114,6 +116,8 @@ public class VentanaCine extends JFrame {
         btnTotalesTaquilla.setBackground(new Color(75, 175, 80));
         btnTotalesTaquilla.setForeground(Color.BLACK);
         btnTotalesTaquilla.setFocusPainted(false);
+        btnTotalesTaquilla.setContentAreaFilled(false);
+        btnTotalesTaquilla.setOpaque(true);
         btnTotalesTaquilla.addActionListener(e -> mostrarTotalesTaquilla());
         panelNorte.add(btnTotalesTaquilla);
 
@@ -195,6 +199,8 @@ public class VentanaCine extends JFrame {
                 JToggleButton btnAsiento = new JToggleButton(codigo);
                 btnAsiento.setFont(new Font("SansSerif", Font.BOLD, 11));
                 btnAsiento.setFocusPainted(false);
+                btnAsiento.setContentAreaFilled(false);
+                btnAsiento.setOpaque(true);
 
                 if (estado == EstadoAsiento.OCUPADO) {
                     btnAsiento.setText(codigo + " (X)");
